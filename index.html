@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- Please ensure you are connected to the web for assets to load -->
+<!-- font awesome icon cdn -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<!-- google font cdn -->
+<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+<!-- style sheet -->
+<link rel="stylesheet" href="css/style.css">
+<title>Imperium</title>
+</head>
+<body>
+  <!-- checkbox button to hide or show navigation of smaller screens -->
+    <input type="checkbox" class="sidebar-toggle" value="show navigation" />
+    <!-- end of checkbox button to hide or show the navigation button  -->
+    
+    <!-- start of the fixed side bar section -->
+    <aside class="sidebar">
+      <div       class="sidenav">
+        <a href="#" class="imperium">
+          <img src="img/imperium.PNG" alt="site logo" />
+          <h2>imperium</h2>
+        </a>
+        <a href="#"><i class="far fa-user"></i> Dashboard</a>
+        <a href="#"><i class="fas fa-download"></i> Orders</a>
+        <a href="#"><i class="fas fa-briefcase"></i> Products</a>
+        <a href="#"><i class="far fa-money-bill-alt"></i> Payment</a>
+        <span class="settings"
+          ><a href="#"><i class="fas fa-cog"></i> Settings</a></span
+        >
+      </div>
+    </aside>
+    <!-- end of the fixed sidebar section -->
+
+    <!-- start of the main section -->
+    <main>
+      <!-- start of the search and user section -->
+      <section class="search-section">
+        <div class="search-container">
+          <i class="fas fa-search"></i>
+          <input type="search" placeholder="Search" />
+        </div>
+        <div class="user-chip">
+          <img src="img/jonh-doe.jpg" alt="person" /> <span class="j-doe">John Doe</span> 
+        </div>
+      </section>
+      <!-- end of the search and user section -->
+
+      <!-- start of the order details section -->
+      <section class="main-section">
+        <div class="container">
+          <section class="orders">
+            <a href="#" class="order"><i class="fas fa-arrow-left "></i> Orders</a>
+            <div>
+              <h2 class="w-100">#00011</h2>
+              <p class="inline seperate-inline">11 September 2018 at 3:04 PM</p>
+              <span class="tag paid">Paid</span>
+              <span class="tag scheduled">Scheduled</span>
+            </div>
+            <span class="w-100 small mr-20"
+              ><i class="fas fa-print"></i> Print Order</span
+            >
+            <label for="myList small" class="seperate-inline"
+              >More Actions</label
+            >
+            <select id="myList">
+              <option value="1"></option>
+            </select>
+          </section>
+          <section class="product-details">
+            <section class="product-info">
+              <article tabindex=0 class="section customer-details Installation">
+                <h3>Installation Date and Time</h3>
+                <div class="date-time">
+                <h3 class="date">
+                    Date:
+                    <p class="time-p">21st October, 2018</p>
+                    </h3>
+                    <h3 class="time">
+                    Time:
+                    <p class="time-p">12:30 PM</p>
+                    </h3>
+                </div>
+              </article>
+              <article class="section customer-details table">
+                <div class="">
+                  <p class="items">Items</p><p class="asc">
+                    <img src="img/panel.png" class="item-img" alt="some image" />
+                    Ayyle Solar Charger <span class="sku">SKU</span>
+                  </p>
+                </div>
+                <div>
+                  <p>Weight</p>
+                  <p>5.0 kg</p>
+                </div>
+                <div>
+                  <p>Quantity</p>
+                  <p>1</p>
+                </div>
+              </article>
+              <div class="actions">
+                <label class="audit">
+                  <input type="checkbox" /> Upload an audit report
+                </label>
+                <button class="btn">
+                  Mark as installed
+                </button>
+              </div>
+            </section>
+            <section>
+              <article tabindex="0" class="section customer-details customer-mb">
+                <h3>Customer Information</h3>
+                <p>Eleanor Ezimah</p>
+                <p class="email">eleanor@gmail.com</p>
+                <p aria-label="phone number +234 0703 128 8880">+234 0703 128 8880</p>
+              </article>
+              <article class="section customer-details customer-mb">
+                <h3>Address</h3>
+                <p>Eleanor Ezimah</p>
+                <p>Sterling Towers, 20 Marina, Lagos</p>
+                <p>100242 Lagos</p>
+                <p>Nigeria</p>
+                <p aria-labelledby="phone number">07031288880</p>
+              </article>
+              <article class="section customer-details">
+                <h3>notes</h3>
+                <p>No notes from customer</p>
+              </article>
+            </section>
+          </section>
+        </div>
+      </section>
+      <!-- end of the order detail section -->
+    </main>
+    <!-- end of the main section -->
+</body>
+</html>
